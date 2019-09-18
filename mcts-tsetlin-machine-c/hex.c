@@ -21,9 +21,6 @@ void hg_init(struct hex_game *hg)
 	hg->number_of_open_positions = BOARD_DIM*BOARD_DIM;
 }
 
-// To avoid determine a winner in each and every round of the game,
-// only check who won when the board is full, and then backtrack to prune redundant positions?
-// Or can winner be determined fast in an incremental manner?
 void hg_winner(struct hex_game *hg)
 {
 
