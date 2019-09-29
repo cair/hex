@@ -11,8 +11,6 @@ struct hex_game {
 	int number_of_open_positions;
 
 	int connected[(BOARD_DIM+2)*(BOARD_DIM+2)*2];
-	int list[BOARD_DIM*BOARD_DIM];
-	int list_size;
 };
 
 void hg_init(struct hex_game *hg)
