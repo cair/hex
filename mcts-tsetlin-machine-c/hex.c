@@ -143,7 +143,7 @@ int main() {
 			player = 1 - player;
 		}
 
-		if (hg.number_of_open_positions >= 80) {
+		if (hg.number_of_open_positions >= 75) {
 			printf("\nPlayer %d wins!\n\n", winner);
 			hg_print(&hg);
 		}
