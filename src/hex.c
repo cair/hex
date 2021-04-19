@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define BOARD_DIM 11
+#ifndef BOARD_DIM
+    #define BOARD_DIM 11
+#endif
 
 int neighbors[] = {-(BOARD_DIM+2) + 1, -(BOARD_DIM+2), -1, 1, (BOARD_DIM+2), (BOARD_DIM+2) - 1};
 
@@ -9,9 +11,7 @@ struct hex_game {
 	int board[(BOARD_DIM+2)*(BOARD_DIM+2)*2];
 	int open_positions[BOARD_DIM*BOARD_DIM];
 	int number_of_open_positions;
-
 	int moves[BOARD_DIM*BOARD_DIM];
-
 	int connected[(BOARD_DIM+2)*(BOARD_DIM+2)*2];
 };
 

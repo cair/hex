@@ -1,10 +1,3 @@
-# hex-ai
-Various AIs for the board game hex, including Monte Carlo Tree Search with the Tsetlin Machine 
-
-## Install
-`pip install git+https://github.com/cair/hex-ai.git`
-## Example
-```python
 from PyHex import Hex11 as Hex
 
 if __name__ == "__main__":
@@ -28,4 +21,4 @@ if __name__ == "__main__":
         if hg.number_of_open_positions >= 75:
             print("\nPlayer %s wins!\n\n" % (winner, ))
             Hex.print(hg)
-```
+
