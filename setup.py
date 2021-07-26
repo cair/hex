@@ -4,11 +4,11 @@ from pybind11.setup_helpers import Pybind11Extension, build_ext
 __version__ = "1.0.0"
 
 ext_modules = [
-    Pybind11Extension(f"PyHex.Hex{i}", ["src/pyhex.cpp"], define_macros=[
+    Pybind11Extension(f"cairl.Hex{i}", ["src/pyhex.cpp"], define_macros=[
         ('BOARD_DIM', i),
         ('PYHEX_NAME', f"Hex{i}")
     ])
-    for i in range(1, 51, 2)
+    for i in range(5, 53, 2)
 ]
 
 setup(
